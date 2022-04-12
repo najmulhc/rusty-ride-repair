@@ -1,0 +1,21 @@
+.single-service{
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    .service-image{
+        min-width: 100%;
+        border-radius: 5px;
+    }
+    .service-title{
+        font-size: 32px;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.876);
+        margin: 0;
+        padding: 0;
+    }
+    .service-description{
+        font-size: 18px;
+        line-height: 27px;
+        color: rgb(19, 19, 19);
+    }
+}
