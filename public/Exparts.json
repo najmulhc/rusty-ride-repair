@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "name": "Tomas Thompson",
+        "position":"Bike Engineer",
+        "description":"I love to design new bikes! even cooler then yours!",
+        "img":"https://i.ibb.co/PcFy6cy/1.png"
+    },
+    {
+        "id":2,
+        "name": "Henry Berkel",
+        "position":"The chain expert",
+        "description":"Problems in chain? just call me!",
+        "img":"https://i.ibb.co/G3H0dV5/2.png"
+    },
+    {
+        "id":3,
+        "name": "Sarah Mensay",
+        "position":"The tire expert",
+        "description":"No more puntures, Just go!",
+        "img":"https://i.ibb.co/QvS3wZN/3.png"
+    },
+    {
+        "id":4,
+        "name": "Jou Wang",
+        "position":"The seat specialist",
+        "description":"Make it comfy!",
+        "img":"https://i.ibb.co/HpCkMBf/4.png"
+    },
+    {
+        "id":5,
+        "name": "Miceal Rock",
+        "position":"The big boss",
+        "description":"I love to deal with cycles!",
+        "img":"https://i.ibb.co/XzDJyLP/5.png"
+    }
+]
