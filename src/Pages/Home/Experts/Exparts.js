@@ -10,9 +10,9 @@ const Exparts = () => {
     },[]);
     console.log(experts);
     return (
-        <div>
+        <div className='container'>
              <h1 className='text-center fw-1'>Our expert</h1>
-             <div className="row">
+             <div className="row g-3">
                  {
                      experts.map(expert => <Expert expert={expert} />)
                  }
