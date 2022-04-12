@@ -1,11 +1,12 @@
 import React from 'react';
 import Exparts from '../Experts/Exparts';
 import Services from '../Services/Services';
+import Banner from '../Banner/Banner';
 import './Home.scss'
 const Home = () => {
     return (
         <div>
-            <p>welcome to our page</p>
+            <Banner/>
             <Services/>
             <Exparts/>
         </div>
