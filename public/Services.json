@@ -3,6 +3,29 @@
         "id": 1,
         "name": "Fix a Flat",
         "description": "Droopy wheels? Check the tire pressure before looking for holes. To make sure the tires are inflated correctly, find the intended air pressure range for each tire, which is usually printed on the smooth side of the tire (not the treads). Use a bike pump with a built-in tire pressure gauge to find the sweet spot. And unless exploding tires sounds like a fun time, avoid gas station air pumps, which are very powerful and can easily blow out smaller bicycle wheels." ,
-        "price":24.99
-    }
+        "price":24.99,
+        "img": "https://i.ibb.co/V3CmGmD/service-1.png"
+    } ,
+    {
+        "id": 2,
+        "name": "Tighten Up Loose Bolts",
+        "description": "icycles are held together entirely by nuts and bolts, so before heading out on a two-wheeled jaunt, make sure all hardware is secure — but not too tight. The main problem areas are the handlebars, stem, and seat post, where pressure and friction can loosen bolts. Overtightening can round the bolts and ruin the threads on the bike, making for a pricey repair job. Instead, invest in a torque wrench." ,
+        "price":16.99,
+        "img":"https://i.ibb.co/bNj1yY0/service-2.png"
+    } ,
+    {
+        "id": 3,
+        "name": "Loosen a Stuck Seat",
+        "description": "As everyone who has ever had a hand-me-down bike knows, there’s nothing worse than dealing with a stuck seat that is too high or too low. The first step is to loosen the binder all the way and remove the collar and bolt. Soak the whole problem area with WD-40 and leave it alone overnight so the spray can work its magic. If the seat still won’t budge, grip the saddle and try to twist the post free. If it’s still stuck, get a clamp and some pliers and start twisting and pulling the pieces apart." ,
+        "price":10.99,
+        "img":"https://i.ibb.co/d2tZQvn/service-3.png"
+    } ,
+    {
+        "id": 4,
+        "name": "Wrap Drop Handlebars",
+        "description": "After a season of cycling adventures in rain, mud, and sleet, a road bike’s handlebars can get gummy, stinky, and worn out, making for an unpleasant cycling experience. Luckily, rewrapping the handlebars in fresh new tape is a breeze! Start by peel off that nasty old tape, using scissors if it gets stuck. Most tape kits come with two extra scraps of tape — stick those under both brake levers so there’s no gap between the brake apparatus and the handlebar. Take the tape and start on the bottom of the dropped end of the handlebar, with the edge of the tape on the underside. Wrap up and over the top of the handlebar tightly and smoothly in a clockwise direction." ,
+        "price":10.99,
+        "img":"https://i.ibb.co/yP270qq/service-4.png"
+    } 
+
 ]
