@@ -2,9 +2,11 @@ import React from 'react';
 import './Footer.scss';
 
 const Footer = () => {
+    const today = new Date();
+    const year = today.getFullYear();
     return (
         <div>
-            <p>Copyright 2022 dynamic year add korte hobe</p>
+            <p>©Copyright Rusty Ride Repair {year}. All rights reserved </p>
         </div>
     );
 };

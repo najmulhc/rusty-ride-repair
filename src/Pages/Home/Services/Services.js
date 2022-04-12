@@ -9,7 +9,7 @@ const Services = () => {
       .then((data) => setServices(data));
   }, []);
   return (
-    <div className="services container">
+    <div className="services container" id="services">
       <h1 className="service-title text-success">Services we offer</h1>
       <div className="service-container row">
         {services.map((service) => (
