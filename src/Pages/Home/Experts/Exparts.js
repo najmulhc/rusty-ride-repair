@@ -13,7 +13,7 @@ const Exparts = () => {
       <h1 className="text-center  text-success">Our Experts</h1>
       <div className="row g-3">
         {experts.map((expert) => (
-          <Expert expert={expert} />
+          <Expert expert={expert} key={expert.id}/>
         ))}
       </div>
     </div>
