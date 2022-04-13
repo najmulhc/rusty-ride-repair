@@ -41,7 +41,7 @@ const Register = () => {
   }
  
   return (
-    <div className="card w-25 mx-auto p-3 mt-4">
+    <div className="card md-w-25 w-75 mx-auto p-3 mt-4">
       <h1 className="font-bold text-1 text-success m-0 p-0">Register here</h1>
       <form onSubmit={handleFormSubmit}>
         <div className="form-group">
@@ -85,7 +85,7 @@ const Register = () => {
         <h6 className="text-4">
           Already Registered?{" "}
           <span onClick={goToLogin} className="text-success">
-            Login Here
+            Log in Here
           </span>
         </h6>
         <button type="submit" className="btn btn-success w-100 ">

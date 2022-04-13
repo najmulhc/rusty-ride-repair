@@ -8,13 +8,21 @@ import ServiceDetail from "./Pages/ServiceDetail/ServiceDetail";
 import NotFound from "./Pages/NotFound/NotFound";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
+import RouteProtection from "./Pages/Shared/RouteProtection/RouteProtection";
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={
+            <RouteProtection>
+            <About></About>
+            </RouteProtection>
+        }>
+        
+          </Route>
+
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/register" element={ <Register></Register> }></Route>
         {/* dynamic route for specific service , each service we can get using use params hook in serviceDetail component */}
