@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router';
 const Service = ({service}) => {
-    const {name, description, img} = service;
+    const {name, img} = service;
     const navigate = useNavigate();
     const navigateToServiceDetail = id => {
       //setting dynamic url for specific service

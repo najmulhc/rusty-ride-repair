@@ -6,6 +6,7 @@ import Footer from "./Pages/Shared/Footer/Footer";
 import About from "./Pages/About/About";
 import ServiceDetail from "./Pages/ServiceDetail/ServiceDetail";
 import NotFound from "./Pages/NotFound/NotFound";
+import Login from "./Pages/Login/Login";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/login" element={<Login/>}></Route>
         {/* dynamic route for specific service , each service we can get using use params hook in serviceDetail component */}
         <Route path="/service/:serviceId" element={<ServiceDetail></ServiceDetail>}></Route>
         <Route path="*" element={<NotFound/> }></Route>
