@@ -54,6 +54,7 @@ const Register = () => {
             aria-describedby="emailHelp"
             placeholder="Enter email"
             ref={emailRef}
+            required
           ></input>
           <small id="emailHelp" className="form-text text-muted">
             We'll never share your email with anyone else.
@@ -69,6 +70,7 @@ const Register = () => {
             placeholder="Password"
             varient="success"
             ref={passwordRef}
+            required
           ></input>
         </div>
         <br />
@@ -80,7 +82,16 @@ const Register = () => {
             id="exampleInputPassword2"
             placeholder="Password"
             ref={confirmPasswordRef}
+            required
           ></input>
+
+        </div>
+        <br />
+        <div className="form-group">
+          <input type="checkbox" name="agree" id="f" required />
+          <label htmlFor="agree">
+              <p className="ml-1"> I agree to the terms and conditions</p>
+          </label>
         </div>
         <br />
         <h6 className="text-4">
