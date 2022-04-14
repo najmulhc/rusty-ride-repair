@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useNavigate } from "react-router";
 import {useCreateUserWithEmailAndPassword} from "react-firebase-hooks/auth";
 import {auth} from '../../Firebase.init'
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 const Register = () => {
   const emailRef = useRef("");
@@ -92,6 +93,7 @@ const Register = () => {
           Register
         </button>
       </form>
+      <SocialLogin/>
     </div>
   );
 };

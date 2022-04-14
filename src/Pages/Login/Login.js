@@ -1,7 +1,11 @@
 import React, { useRef } from "react";
-import { useSignInWithEmailAndPassword, useSignInWithGoogle } from "react-firebase-hooks/auth";
+import {
+  useSignInWithEmailAndPassword,
+  useSignInWithGoogle,
+} from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router";
 import { auth } from "../../Firebase.init";
+import SocialLogin from "../Shared/SocialLogin/SocialLogin";
 
 const Login = () => {
   const refEmail = useRef("");
@@ -9,36 +13,33 @@ const Login = () => {
   const navigate = useNavigate();
 
   //getting data using react firebase hooks
-  const [signInWithEmailAndPassword, Guser, Gloading, Gerror] =
+
+  const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
-  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const goToRegister = () => {
     navigate("/register");
   };
-  const googleSignIn = (event) => {
-    signInWithGoogle();
-    event.preventDefault();
-  }
+
   const login = (event) => {
     const email = refEmail.current.value;
     const password = refPassword.current.value;
     signInWithEmailAndPassword(email, password);
     event.preventDefault();
   };
-  if (user || Guser) {
+  if (user) {
     console.log("it is working perfectly");
-    user? console.log(user) : console.log(Guser); 
+    console.log(user);
     navigate("/");
   }
-  if (loading || Gloading) {
+  if (loading) {
     console.log("loading while login");
   }
-  if (error || Gerror) {
+  if (error) {
     console.error(error);
   }
 
   return (
-    <div className="card md-w-25 w-75 mx-auto p-3 mt-4">
+    <div className="card  mx-auto p-3 mt-4 w-50">
       <h1 className="font-bold text-1 text-success m-0 p-0">Log in here</h1>
       <form onSubmit={login}>
         <div className="form-group">
@@ -51,9 +52,6 @@ const Login = () => {
             placeholder="Enter email"
             ref={refEmail}
           ></input>
-          <small id="emailHelp" className="form-text text-muted">
-            We'll never share your email with anyone else.
-          </small>
         </div>
         <div className="form-group">
           <label htmlFor="exampleInputPassword1">Password</label>
@@ -86,10 +84,8 @@ const Login = () => {
         <button type="submit" className="btn btn-success w-100 ">
           Log in
         </button>
-        <button onClick={googleSignIn} className="btn btn-secondery w-100 ">
-          Continue With Google
-        </button>
       </form>
+      <SocialLogin />
     </div>
   );
 };

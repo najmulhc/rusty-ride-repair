@@ -6,9 +6,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 const Header = () => {
   const [user] = useAuthState(auth);
+  
   const logout = () => {
     signOut(auth);
   };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-success lg-fixed-top">
       <div className="container">
@@ -41,7 +43,7 @@ const Header = () => {
             {user ? (
               <li className="nav-item">
                 <a href="/" onClick={logout} className="nav-link">
-                  Log out
+                  {user.email} Log out
                 </a>
               </li>
             ) : (
